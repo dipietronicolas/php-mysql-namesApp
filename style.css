@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    position: relative;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.app-container {
+    height: 25rem;
+    width: 30rem;
+    margin:1rem;
+    padding-top: 5rem;
+    border-radius: 5px;
+    background-color: ghostwhite;
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 4px 5px 2px rgba(10, 10, 10, 0.8);
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:50%;
+    height: 50%;
+}
+
+
+
+
+.form-label {
+    font-size: 105%;
+}
+
+.checkboxes-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
+}
+
+.form-checkbox {
+    min-height: 1.1rem;
+    min-width: 1.1rem;
+}
+
+.form-input {
+    display: flex;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 105%;
+    border: 1px solid rgba(30, 144, 255, 0.7);
+    border-radius: 5px;
+    
+}
+
+.form-input:focus {
+    border: 2px solid;
+    border-color: dodgerblue;
+    outline: none;
+    box-shadow: 0px 0px 10px 5px rgba(30, 144, 255, 0.5);
+}
+
+.btn {
+    padding: 0.5rem;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 105%;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+.btn:hover {
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+    color: ghostwhite;
+    
+}
+
+.btn-danger {
+    padding: 0.5rem;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 105%;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.btn-danger:hover {
+    background-color: crimson;
+    border-color: crimson;
+    color: ghostwhite;
+}
+
+.result-container {
+    height: 25rem;
+    width: 30rem;
+    margin:1rem;
+    border-radius: 5px;
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 4px 4px 5px 2px rgba(10, 10, 10, 0.8);
+}
+
+.result-header {
+    width: 100%;
+    height:15%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px dotted rgba(10, 10, 10, 0.7);
+}
+
+.result-title {
+    font-size: 105%;
+}
+
+.result-body{
+    width: 100%;
+    height: 75%;
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.result {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-delete-container {
+    width: 3rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.edit-delete-button {
+    color:black;
+    text-decoration: none;
+    font-size: 102%;
+}
+
+.edit-form-blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-form-container {
+    position: relative;
+    height: 25rem;
+    width: 30rem;
+    margin:1rem;
+    border-radius: 5px;
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    box-shadow: 4px 4px 5px 2px rgba(10, 10, 10, 0.8);
+    z-index: 2;
+}
+
+.close-container {
+    position: absolute;
+    top:1rem;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+
+.close-button {
+    font-size: 150%;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+
+@media screen and (max-width:576px){
+    .app-container {
+        margin-top: 6rem;
+        padding-top:3rem;
+    }
+    .container {
+        padding: 0;
+    }
+    .form-control {
+        height: 75%;
+    }
+    .form-input {
+        margin-top: 0;
+    }
+    .checkboxes-container {
+        flex-direction: column;
+    }
+    .checkboxes-container p {
+        display: flex;
+        justify-content: space-between;
+        width: 8rem;
+    }
+}
